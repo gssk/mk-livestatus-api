@@ -31,7 +31,7 @@ Here a simple example to fetch the name and hostgroups for all servers in the UP
 
 ``s.hosts`` returns a Query to the ``hosts`` resources on Nagios. The ``columns`` and ``filter`` methods modify our query and return it, so we can chain the calls. The call to `call` method returns the rows as a list of dictionaries. 
 
-If you use xinetd to bind the Unix socket to a TCP socket (like explained `here <http://mathias-kettner.de/checkmk_livestatus.html#Livestatus%20via%20xinetd>`_), you can create the socket like :
+If you use xinetd to bind the Unix socket to a TCP socket you can create the socket like :
 
     >>> s = Socket(('192.168.1.1', 6557))
 
